@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-24T12:25:43 IST" name="Default suite" finished-at="2023-07-24T12:25:57 IST" duration-ms="13285">
+    <groups>
+    </groups>
+    <test started-at="2023-07-24T12:25:43 IST" name="Default test" finished-at="2023-07-24T12:25:57 IST" duration-ms="13285">
+      <class name="com.testNG.SimpleAnnotation">
+        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.testNG.SimpleAnnotation@8519cb4]" started-at="2023-07-24T12:25:22 IST" name="BrowserLaunch" finished-at="2023-07-24T12:25:43 IST" duration-ms="21373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method is-config="true" signature="url()[pri:0, instance:com.testNG.SimpleAnnotation@8519cb4]" started-at="2023-07-24T12:25:43 IST" name="url" finished-at="2023-07-24T12:25:50 IST" duration-ms="6931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="password()[pri:0, instance:com.testNG.SimpleAnnotation@8519cb4]" started-at="2023-07-24T12:25:52 IST" name="password" finished-at="2023-07-24T12:25:53 IST" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- password -->
+        <test-method signature="username()[pri:0, instance:com.testNG.SimpleAnnotation@8519cb4]" started-at="2023-07-24T12:25:53 IST" name="username" finished-at="2023-07-24T12:25:53 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username -->
+        <test-method is-config="true" signature="submit()[pri:0, instance:com.testNG.SimpleAnnotation@8519cb4]" started-at="2023-07-24T12:25:53 IST" name="submit" finished-at="2023-07-24T12:25:57 IST" duration-ms="3715" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method com.testNG.SimpleAnnotation.submit() didn't finish within the time-out 3000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method com.testNG.SimpleAnnotation.submit() didn't finish within the time-out 3000
+at java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+at java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+at java.base@17.0.6/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1866)
+at java.base@17.0.6/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+at java.base@17.0.6/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+at java.base@17.0.6/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1939)
+at java.base@17.0.6/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda$240/0x00000001002dc150.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$382/0x000000010031c000.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at app//org.openqa.selenium.remote.http.Filter$$Lambda$241/0x00000001002dc380.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$382/0x000000010031c000.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at app//org.openqa.selenium.remote.http.Filter$$Lambda$241/0x00000001002dc380.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:97)
+at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at app//com.testNG.SimpleAnnotation.submit(SimpleAnnotation.java:41)
+at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@17.0.6/java.lang.reflect.Method.invoke(Method.java:568)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@17.0.6/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit -->
+      </class> <!-- com.testNG.SimpleAnnotation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
